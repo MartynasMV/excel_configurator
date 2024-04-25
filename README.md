@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Excel Configurator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Excel Configurator is a web application designed to streamline the process of working with Excel files and metamodel. It allows you to upload an Excel file, read its contents, map it with a metamodel, and generate an XML file.
 
-## Available Scripts
+## Installation and Setup
 
-In the project directory, you can run:
+Before you can use the Excel Configurator, you need to set it up on your local machine. Follow these steps:
 
-### `npm start`
+1. **Clone the repository**: Clone this repository to your local machine using `git clone git@github.com:MartynasMV/excel_configurator.git`.
+2. **Install dependencies**: Navigate to the project directory and run `npm install` to install the necessary dependencies.
+3. **Start the application**: Once the installation is complete, you can start the application by running `npm start`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Now, you should be able to access the application at `http://localhost:3000`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Excel File Upload**: The application provides an interface to upload your Excel files easily.
+- **Excel File Reading**: After uploading, the application reads the contents of the Excel file.
+- **Metamodel Mapping**: The application allows you to map the contents of the Excel file with a metamodel. This feature is particularly useful when you want to import data from an Excel file into a system that uses a specific metamodel.
+- **XML File Generation**: Once the mapping is done, the application generates an XML file. This XML file can be used for various purposes such as data exchange, backup, etc.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Use
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Upload your Excel file**: Click on the 'Upload' button and select the Excel file you want to work with. (example file-example.xlsx can be found in src/)
+2. **Read the Excel file**: After uploading, the application will automatically read the contents of the Excel file.
+3. **Map with the metamodel**: Select "Assign Attributes" and in the dropdown select Source Attributes (from Excel) and Target attributes (from the metamodel).
+4. **Generate XML file**: Once the mapping is done, click on the 'Save' button. The application will create an XML file.
